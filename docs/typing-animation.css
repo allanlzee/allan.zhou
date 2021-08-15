@@ -1,20 +1,57 @@
-.typewriting-animation {
-    color: white;
-    font-weight: bold; 
-    font-family: var(--secondary-font);
+:root {
+    --animation-speed: 4s; 
+    --animation-steps: 25; 
 }
 
+.typewriter-section {
+    margin: 0; 
+    font-family: "Source Code Pro", monospace;
+    display: grid;
+    place-content: center; 
+    text-align: center;
+    background: white; 
+}
+
+.typewriting-animation {
+    color: black;
+    font-weight: bold; 
+    position: relative; 
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    position: relative; 
+    padding: 0.5em; 
+}
 
 .typewriting-animation::before, 
 .typewriting-animation::after {
+    position: absolute;
     content: ''; 
     top: 0; 
     right: 0; 
     bottom: 0; 
     left: 0; 
-    position: absolute; 
 }
 
 .typewriting-animation::before {
-    
+    background: white;
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) 1s forwards; 
+}
+
+.typewriting-animation::after {
+    width: 0.125em; 
+    background: black;
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) 1s forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%; 
+    }
+}
+
+@keyframes blink {
+    to {
+        background: transparent; 
+    }
 }
