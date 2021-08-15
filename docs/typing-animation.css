@@ -47,11 +47,17 @@
 @keyframes typewriter {
     to {
         left: 100%; 
-    }
+    } 
 }
 
 @keyframes blink {
     to {
         background: transparent; 
+    }
+}
+
+@keyframes disappear {
+    to {
+        background: white; 
     }
 }
