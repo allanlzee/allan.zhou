@@ -1,9 +1,9 @@
 /* Project Section */
 
-.my-projects {
+  .my-projects {
     text-align: center;
     align-items: center;
-    background: linear-gradient(45deg, #CCFFFF, #FFCCCC);
+    background: linear-gradient(45deg, #54dbf3, #ffc23f);
   }
   
   .portfolio-img {
@@ -90,13 +90,77 @@
     margin: auto;
     margin-top: 1em; 
     margin-bottom: 1.5em;
-    width: 40vw; 
-    height: 22vh; 
+    width: 20em; 
+    height: 12em; 
+  }
+
+  .coding-projects {
+    color: rgb(21, 11, 155);
   }
 
   .coding-projects:hover {
      background: white;
+     animation: scale 200ms ease-in-out forwards; 
   }
+
+  .project-pictures {
+    transform-origin: center; 
+  }
+
+@keyframes scale {
+  to {
+    transform: scale(1.05); 
+  }
+}
+
+@media (max-width: 825px) {
+  .coding-project-grid {
+    display: grid; 
+    grid-column-gap: 1em; 
+    grid-template-areas:
+      "div"
+      "div"
+      "div"
+      "div";
+    align-items: center;
+  }
+
+  .android-development {
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+  }
+
+  .python {
+      grid-column-start: 1; 
+      grid-column-end: 2; 
+      grid-row-start: 2; 
+      grid-row-end: 3;
+  }
+
+  .front-end-development {
+      grid-column-start: 1; 
+      grid-column-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
+  }
+
+  .api-projects {
+      grid-column-start: 1; 
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+  }
+
+  .project-pictures {
+    margin: auto;
+    margin-top: 1em; 
+    margin-bottom: 1.5em;
+    width: 20em; 
+    height: 12em; 
+  }
+}
   
   
   /* End of Coding Project Grid Section */ 

@@ -2,6 +2,7 @@
     --animation-speed: 4s; 
     --animation-steps: 25; 
     --animation-delay: 5s; 
+    --background-color-primary: #ccfffc; 
 }
 
 .typewriter-section {
@@ -10,7 +11,7 @@
     display: grid;
     place-content: center; 
     text-align: center;
-    background: white; 
+    background: var(--background-color-primary);
 }
 
 .typewriting-animation {
@@ -34,7 +35,7 @@
 }
 
 .typewriting-animation::before {
-    background: white;
+    background: var(--background-color-primary);
     animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards; 
 }
 
@@ -59,6 +60,6 @@
 
 @keyframes disappear {
     to {
-        background: white; 
+        background: var(--background-color-primary);
     }
 }
