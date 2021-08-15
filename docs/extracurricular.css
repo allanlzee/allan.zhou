@@ -1,0 +1,66 @@
+/* Extracurricular Section */
+
+.extracurricular-section {
+    background: linear-gradient(35deg, #0267fe, #8601AF);
+    color: var(--color-light);
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) 
+  {
+    .extracurricular-section {
+      margin-top: auto; 
+    }
+  }
+  
+  .interests {
+    font-size: var(--font-size-description);
+  }
+  
+  .section-title-extracurricular {
+    color: cyan;
+    text-align: center;
+    font-size: 3.75em;
+  }
+  
+  .interest-heading {
+    text-align: center;
+    font-size: 30px;
+    color: lightblue;
+  }
+  
+  .work-button {
+    font-size: 2rem;
+    color: orangered;
+    margin: 0;
+  }
+  
+  @media (max-width: 600px) 
+  {
+    .work-button {
+      font-size: 1.25rem; 
+    }
+  }
+  
+  .interest-description {
+    text-align: center;
+    width: 50%; 
+    margin: auto; 
+    padding: 1em 1em; 
+  }
+  
+  .interest {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .interest-violin {
+    display: flex;
+  }
+  
+  /* End of Extracurricular Section */

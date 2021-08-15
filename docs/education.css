@@ -1,0 +1,57 @@
+/* Education Section */
+.education {
+    display: block; 
+    overflow: auto; 
+    color: var(--color-light);
+    font-size: 2rem;
+    background-image: url(https://www.thebalancecareers.com/thmb/hKctLkuZxqFGd3XpQCUjQBjSPjQ=/3436x2577/smart/filters:no_upscale\(\)/school-books-on-desk--education-concept-871454068-5b548900c9e77c005b04fc8c.jpg);
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .section-title-education {
+    color: yellow;
+    font-size: 2.0em; 
+  }
+  
+  #education-description {
+    width: 40%; 
+    text-align: left; 
+    margin: auto; 
+    color: white; 
+    font-size: 1.5rem; 
+  }
+  
+  @media (max-width: 1200px){
+    #education-description {
+      width: 40%; 
+      font-size: 1.4rem; 
+    }
+  
+    #bloor-img {
+      width: 40%
+    }
+  }
+  
+  @media (max-width: 850px) {
+    #education-description {
+      width: 40%;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #education-description {
+      width: 40%;
+      font-size: 0.75rem; 
+    }
+  }
+  
+  .education-body {
+    font-size: 1.25em;
+    display: flex; 
+    justify-content: space-between;
+  }
+  
+  /* End of Education Section */

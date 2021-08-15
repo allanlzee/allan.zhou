@@ -1,0 +1,20 @@
+.typewriting-animation {
+    color: white;
+    font-weight: bold; 
+    font-family: var(--secondary-font);
+}
+
+
+.typewriting-animation::before, 
+.typewriting-animation::after {
+    content: ''; 
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0; 
+    position: absolute; 
+}
+
+.typewriting-animation::before {
+    
+}

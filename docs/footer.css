@@ -1,0 +1,24 @@
+/* Footer Section */
+
+.footer-section {
+    text-align: center;
+    background-image: url(http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/10fa7acca6b544e5_simon-berger-twukN12EN7c-unsplash/i/Colorful-Mountains-Zoom-Background.jpg);
+    background: cover; 
+  }
+  
+  .footer-link {
+    font-size: 24px;
+    color: darkblue;
+  }
+  
+  .foot-section-subheading {
+    font-size: 2rem; 
+    color: darkblue; 
+  }
+  
+  .footer-link-violin {
+    font-size: 24px; 
+    color: darkblue; 
+  }
+  
+  /* End of Footer Section */

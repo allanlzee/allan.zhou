@@ -1,0 +1,79 @@
+/* Styles for the Navigation/Header Page */
+
+/* Smaller Screens */
+@media (max-width: 599px) {
+    .logo { 
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact-info {
+      padding: 0.75em 0.75em;
+    }
+  
+    #contact-info-name {
+      font-size: 18px;
+    }
+  
+    .nav-toggle {
+      display: none;
+    }
+  
+    .contact-info {
+      font-size: 14px;
+      top: 0px;
+      color: white; 
+    }
+  
+    .nav {
+      top: 40px;
+      /* display: none; */
+    }
+  
+    .logo-img {
+      flex-shrink: 2;
+    }
+  
+    #logo-img {
+      height: 125px;
+      width: 125px;
+      border-radius: 50%;
+    }
+  
+    .nav__list {
+      font-size: 14px; 
+    }
+  }
+  
+  /* Larger Screens */
+  @media (min-width: 600px) {
+    .logo {
+    
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .contact-info {
+      padding: 1em 1em;
+    }
+  
+    .nav-toggle {
+      display: none;
+    }
+  
+    .contact-info {
+      font-size: 20px;
+      top: 0px;
+    }
+  
+    .nav {
+      top: 40px;
+      /* display: none; */
+    }
+  }
+  
+  /* End of Media Queries */
