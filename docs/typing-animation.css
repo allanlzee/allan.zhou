@@ -1,6 +1,7 @@
 :root {
     --animation-speed: 4s; 
     --animation-steps: 25; 
+    --animation-delay: 5s; 
 }
 
 .typewriter-section {
@@ -34,13 +35,13 @@
 
 .typewriting-animation::before {
     background: white;
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) 1s forwards; 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards; 
 }
 
 .typewriting-animation::after {
     width: 0.125em; 
     background: black;
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) 1s forwards, 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards, 
     blink 750ms steps(var(--animation-steps)) infinite; 
 }
 

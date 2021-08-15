@@ -85,6 +85,18 @@
       grid-row-start: 2;
       grid-row-end: 3;
   }
+
+  .project-pictures {
+    margin: auto;
+    margin-top: 1em; 
+    margin-bottom: 1.5em;
+    width: 40vw; 
+    height: 22vh; 
+  }
+
+  .coding-projects:hover {
+     background: white;
+  }
   
   
   /* End of Coding Project Grid Section */ 
