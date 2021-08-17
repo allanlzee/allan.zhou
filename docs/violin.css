@@ -6,7 +6,7 @@
     color: rgb(11, 243, 224); 
     text-align: center;
     font-size: 2.75em;
-    margin-bottom: 1em; 
+    margin-bottom: 0.5em; 
 }
 
 .solo-performances {
@@ -15,14 +15,44 @@
     align-items: center; 
 }
 
+.chamber-performances {
+    margin-top: 1.5em; 
+}
+
 .violin-section-subtitles {
     text-align: center; 
     color: white; 
-    font-size: 1.5em; 
+    font-size: 2.25em; 
     margin: auto; 
-    margin-bottom: 1em; 
+}
+
+.violin-section-song-name {
+    text-align: center;
+    color: white; 
+    font-size: 1.25em;
 }
 
 .violin-video {
     margin: auto; 
+    align-content: center;
+}
+
+.thumbnail {
+    height: 30vh; 
+}
+
+#concerto-g-major-mozart {
+    margin: auto; 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+}
+
+#allegro-brillante {
+    margin: auto; 
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
 }
