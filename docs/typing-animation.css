@@ -5,6 +5,13 @@
     --background-color-primary: #ccfffc; 
 }
 
+.section-title-typewriter {
+    color: rgb(0, 60, 255);
+    text-align: center;
+    font-size: 2.75em;
+    margin-bottom: 1em; 
+}
+
 .typewriter-section {
     margin: 0; 
     font-family: "Source Code Pro", monospace;

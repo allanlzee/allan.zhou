@@ -2,7 +2,7 @@
 
 .footer-section {
     text-align: center;
-    background-image: url(http://media1.popsugar-assets.com/files/2021/01/14/843/n/1922507/10fa7acca6b544e5_simon-berger-twukN12EN7c-unsplash/i/Colorful-Mountains-Zoom-Background.jpg);
+    background: linear-gradient(45deg, #26c2f1, #f0ab16);
     background: cover; 
   }
   

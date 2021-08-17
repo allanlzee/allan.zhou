@@ -1,0 +1,10 @@
+.violin-performances-section {
+    background: linear-gradient(35deg, #0267fe, #8601AF);
+}
+
+.section-title-violin {
+    color: white; 
+    text-align: center;
+    font-size: 2.75em;
+    margin-bottom: 1em; 
+}
