@@ -5,6 +5,50 @@
     --background-color-primary: #ccfffc; 
 }
 
+.about-me-grid {
+    display: grid; 
+    grid-column-gap: 2em; 
+}
+
+.typewriter-sentences {
+    text-align: center; 
+    margin: auto;
+    margin-bottom: 2em;  
+}
+
+.about-me-image {
+    height: 500px; 
+    width: 300px;
+    border-radius: 10%; 
+    grid-column-start: 2; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    margin: auto; 
+    margin-top: 2.5em;
+}
+
+@media (max-width: 500px) {
+
+}
+
+.resume {
+    grid-column-start: 3; 
+    grid-column-end: 4; 
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    text-align: left; 
+    margin: auto; 
+}
+
+.resume-heading {
+    font-size: 100%; 
+}
+
+.list-point {
+    font-size: 100%; 
+}
+
 .section-title-typewriter {
     color: rgb(0, 60, 255);
     text-align: center;
