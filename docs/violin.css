@@ -13,33 +13,52 @@
     display: grid; 
     grid-column-gap: 1em;
     align-items: center; 
+    margin-bottom: 3em; 
 }
 
 .chamber-performances {
-    margin-top: 1.5em; 
+    display: grid; 
+    grid-column-gap: 1em; 
+    align-items: center; 
 }
 
 .violin-section-subtitles {
     text-align: center; 
-    color: white; 
+    color: rgb(241, 179, 9); 
     font-size: 2.25em; 
-    margin: auto; 
+    padding: 0.25em; 
+    margin-bottom: 0.25em;
 }
 
 .violin-section-song-name {
     text-align: center;
-    color: white; 
+    color: rgb(231, 229, 216); 
     font-size: 1.25em;
 }
 
 .violin-video {
-    margin: auto; 
     align-content: center;
 }
 
 .thumbnail {
-    height: 30vh; 
+    height: 75%; 
+    width: 75%; 
+    margin: auto; 
+    padding-bottom: 2.5em; 
+    padding-left: 1em;
+    padding-right: 1em;  
 }
+
+.performances:hover {
+    background: rgb(5, 168, 243); 
+    animation: scale 200ms ease-in-out forwards; 
+}
+
+@keyframes scale {
+    to {
+      transform: scale(1.05); 
+    }
+  }
 
 #concerto-g-major-mozart {
     margin: auto; 
@@ -56,3 +75,50 @@
     grid-row-start: 2; 
     grid-row-end: 3; 
 }
+
+#trio-beethoven {
+    margin: auto; 
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    grid-row-start: 1; 
+    grid-row-end: 2; 
+}
+
+#astor-piazzolla {
+    margin: auto; 
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+}
+
+@media (min-width: 950px) {
+    .thumbnail {
+        height: 90%; 
+        width: 90%; 
+        margin: auto; 
+    }
+
+    #allegro-brillante-thumbnail {
+        height: 100%; 
+    }
+
+    #allegro-brillante {
+        margin: auto; 
+        grid-column-start: 2; 
+        grid-column-end: 3; 
+        grid-row-start: 1; 
+        grid-row-end: 2; 
+    }
+
+    #astor-piazzolla {
+        margin: auto; 
+        grid-column-start: 2;
+        grid-column-end: 3; 
+        grid-row-start: 1; 
+        grid-row-end: 2; 
+    }
+}
+
+
+
