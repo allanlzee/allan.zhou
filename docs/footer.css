@@ -2,7 +2,7 @@
 
 .footer-section {
     text-align: center;
-    background: linear-gradient(45deg, #26c2f1, #f0ab16);
+    background: white;
     background: cover; 
   }
   
@@ -19,6 +19,35 @@
   .footer-link-violin {
     font-size: 24px; 
     color: darkblue; 
+  }
+
+  .footer__link {
+    text-decoration: none;
+    color: black; 
+    font-size: 1.25em; 
+  }
+
+  .logo-list {
+    display: flex; 
+    margin: auto; 
+    margin-top: 3em; 
+    align-items: center; 
+  }
+
+  .logo-link {
+    margin: auto;
+  }
+
+  .logo-github {
+    height: 8vh;  
+  }
+
+  .logo-instagram {
+    height: 8vh; 
+  }
+
+  .logo-recruit {
+    height: 8vh; 
   }
   
   /* End of Footer Section */
