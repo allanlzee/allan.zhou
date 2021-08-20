@@ -1,8 +1,8 @@
 /* Introductory/Welcome Section */
 .header-logo {
-    color: white; 
-    background: linear-gradient(35deg, #02fefe, #7801af);
-  }
+  color: white; 
+  background: linear-gradient(35deg, #02fefe, #7801af);
+}
 
 .intro_img {
   width: var(--img-width);

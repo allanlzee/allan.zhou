@@ -29,8 +29,9 @@
 }
 
 @media (max-width: 900px) {
-    .about-me-image {
-        height: 40vh; 
+    .about-me-image { 
+        margin-top: 10em; 
+        height: 65%; 
         width: 30vw; 
     }
 
@@ -41,12 +42,11 @@
 
 @media (max-width: 750px) {
     .about-me-image {
-        height: 32vh; 
         width: 32vw; 
     }
 
     .resume {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 }

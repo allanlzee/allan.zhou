@@ -31,6 +31,8 @@
     display: flex; 
     margin: auto; 
     margin-top: 3em; 
+    margin-left: 1em; 
+    margin-right: 0.4em; 
     align-items: center; 
   }
 
@@ -39,15 +41,53 @@
   }
 
   .logo-github {
-    height: 8vh;  
+    height: 15vh;  
   }
 
   .logo-instagram {
-    height: 8vh; 
+    height: 15vh; 
   }
 
   .logo-recruit {
-    height: 8vh; 
+    height: 15vh; 
   }
+
+@media (min-width: 800px) {
+  .logo-list {
+    margin-left: 10em; 
+  }
+  .logo-github {
+    height: 50%; 
+    width: 50%; 
+  }
+
+  .logo-instagram {
+    height: 40%; 
+    width: 40%; 
+  }
+
+  .logo-recruit {
+    height: 55%; 
+    width: 55%; 
+  }
+}
   
-  /* End of Footer Section */
+.footer-logo {
+  margin: auto; 
+}
+
+#footer-logo-image {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin: auto; 
+  margin-top: 5em; 
+}
+
+.footer-text {
+  font-size: 18px;  
+  color: black; 
+}
+
+  
+/* End of Footer Section */
