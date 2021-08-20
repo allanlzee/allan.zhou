@@ -28,8 +28,45 @@
     margin-top: 2.5em;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+    .about-me-image {
+        height: 40vh; 
+        width: 30vw; 
+    }
 
+    .resume {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 750px) {
+    .about-me-image {
+        height: 32vh; 
+        width: 32vw; 
+    }
+
+    .resume {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .about-me-grid {
+        display: flex; 
+    }
+
+    .about-me-image {
+        margin: auto; 
+        width: 0vw; 
+        height: 0vh; 
+    }
+
+    .resume {
+        margin-left: 1em; 
+        margin: auto; 
+        font-size: 12px; 
+    }
 }
 
 .resume {
@@ -54,6 +91,7 @@
     text-align: center;
     font-size: 2.75em;
     margin-bottom: 1em; 
+    text-align: center; 
 }
 
 .typewriter-section {
