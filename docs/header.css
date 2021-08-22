@@ -38,6 +38,10 @@
 }
 
 .welcome-section {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   background: linear-gradient(60deg, #fe0256, #0104af); 
 }

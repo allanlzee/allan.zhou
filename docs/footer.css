@@ -1,72 +1,112 @@
 /* Footer Section */
 
 .footer-section {
-    text-align: center;
-    background: white;
-    background: cover; 
-  }
-  
-  .footer-link {
-    font-size: 24px;
-    color: darkblue;
-  }
-  
-  .foot-section-subheading {
-    font-size: 2rem; 
-    color: darkblue; 
-  }
-  
-  .footer-link-violin {
-    font-size: 24px; 
-    color: darkblue; 
-  }
+  text-align: center;
+  background: white;
+  margin: auto; 
+  align-items: center; 
+  position: relative; 
 
-  .footer__link {
-    text-decoration: none;
-    color: black; 
-    font-size: 1.25em; 
-  }
+}
+  
+.footer-link {
+  font-size: 24px;
+  color: darkblue;
+}
 
-  .logo-list {
-    display: flex; 
-    margin: auto; 
-    margin-top: 3em; 
-    margin-left: 1em; 
-    margin-right: 0.4em; 
-    align-items: center; 
-  }
+.foot-section-subheading {
+  font-size: 2rem; 
+  color: darkblue; 
+}
 
+.footer-link-violin {
+  font-size: 24px; 
+  color: darkblue; 
+}
+
+.footer__link {
+  text-decoration: none;
+  color: black; 
+  font-size: 1.25em; 
+}
+
+.logo-list {
+  display: grid; 
+  margin: auto; 
+  margin-top: 3em; 
+  align-items: center; 
+}
+
+/* 
   .logo-link {
     margin: auto;
   }
 
   .logo-github {
-    height: 15vh;  
+    height: 55%; 
+    width: 55%;  
   }
 
   .logo-instagram {
-    height: 15vh; 
+    height: 55%; 
+    width: 55%; 
   }
 
   .logo-recruit {
-    height: 15vh; 
+    height: 55%; 
+    width: 55%; 
+} */ 
+
+.logo-list {
+  display: grid;
+  justify-content: center;  
+  align-items: center;
+  flex-direction: column; 
+}
+
+.logo-github {
+  height: 50%; 
+  width: 50%; 
+  margin: auto; 
+}
+
+.logo-instagram {
+  height: 25%; 
+  width: 25%; 
+  margin: auto; 
+  margin-top: 1.25em; 
+}
+
+.logo-recruit {
+  height: 55%; 
+  width: 55%;
+  margin: auto;  
+}
+
+@media (min-width: 1050px) {
+  .logo-list {
+    display: flex; 
+    justify-content: center;  
+    align-items: center;
+    margin-left: 1em; 
+    flex-direction: row; 
   }
 
-@media (min-width: 800px) {
-  .logo-list {
-    margin-left: 10em; 
-  }
   .logo-github {
+    margin: none; 
     height: 50%; 
     width: 50%; 
   }
 
   .logo-instagram {
+    margin: none; 
+    margin-top: 0em; 
     height: 40%; 
     width: 40%; 
   }
 
   .logo-recruit {
+    margin: none; 
     height: 55%; 
     width: 55%; 
   }

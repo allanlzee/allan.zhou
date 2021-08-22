@@ -5,6 +5,18 @@
     --background-color-primary: #ccfffc; 
 }
 
+.typewriter-section {
+    margin: 0; 
+    font-family: "Source Code Pro", monospace;
+    place-content: center; 
+    text-align: center;
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background: var(--background-color-primary);
+}
+
 .about-me-grid {
     display: grid; 
     grid-column-gap: 2em; 
@@ -25,12 +37,11 @@
     grid-row-start: 2; 
     grid-row-end: 3; 
     margin: auto; 
-    margin-top: 2.5em;
 }
 
 @media (max-width: 900px) {
-    .about-me-image { 
-        margin-top: 10em; 
+    .about-me-image {
+        margin: auto;  
         height: 65%; 
         width: 30vw; 
     }
@@ -94,15 +105,6 @@
     text-align: center; 
 }
 
-.typewriter-section {
-    margin: 0; 
-    font-family: "Source Code Pro", monospace;
-    display: grid;
-    place-content: center; 
-    text-align: center;
-    background: var(--background-color-primary);
-}
-
 .typewriting-animation {
     color: black;
     font-weight: bold; 
@@ -111,6 +113,26 @@
     font-size: 20px;
     position: relative; 
     padding: 0.5em; 
+}
+
+#tops {
+    color: red; 
+}
+
+#violinist {
+    color: orange; 
+}
+
+#basketball {
+    color: rgb(6, 199, 6); 
+}
+
+#prog-lead {
+    color: rgb(0, 162, 255); 
+}
+
+#aspire {
+    color: rgb(236, 12, 236); 
 }
 
 .typewriting-animation::before, 

@@ -123,3 +123,134 @@ h3 {
 .underh1 {
   font-size: 18px;
 }
+
+.curve {
+  position: absolute; 
+  height: 225px; 
+  width: 100%; 
+  bottom: 0; 
+}
+
+.curve::before {
+  content: ''; 
+  display: block; 
+  position: absolute; 
+  border-radius: 100% 50%; 
+  width: 75%; 
+  height: 100%; 
+  background-color: #ccfffc; 
+  transform: translate(85%, 60%); 
+}
+
+.curve::after {
+  content: ''; 
+  display: block; 
+  position: absolute; 
+  border-radius: 100% 50%; 
+  width: 75%; 
+  height: 100%; 
+  background-color: #ccfffc; 
+  transform: translate(-20%, 80%); 
+}
+
+.curve-bubble {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.curve-bubble svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 102px;
+}
+
+.curve-bubble .shape-fill {
+  fill: #CCFFFC;
+}
+
+.waves-top {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.waves-top svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 40px;
+}
+
+.waves-top .shape-fill {
+  fill: #CCFFFC;
+}
+
+.waves-bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.waves-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 60px;
+}
+
+.waves-bottom .shape-fill {
+  fill: #CCFFFC;
+}
+
+.blue-bottom-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.blue-bottom-wave svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 60px;
+}
+
+.blue-bottom-wave .shape-fill {
+  fill: #0267fe;
+}
+
+.white-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.white-wave svg {
+  position: relative;
+  display: block;
+  width: calc(134% + 1.3px);
+  height: 60px;
+}
+
+.white-wave .shape-fill {
+  fill: white;
+}
