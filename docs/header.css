@@ -1,7 +1,17 @@
 /* Introductory/Welcome Section */
 .header-logo {
   color: white; 
-  background: linear-gradient(35deg, #02fefe, #7801af);
+  background: #19c2c2;
+  overflow: hidden; 
+}
+
+.welcome-grid {
+  margin-bottom: 2em; 
+  margin-top: 2em; 
+}
+
+.welcome-section {
+  position: relative;
 }
 
 .intro_img {
@@ -51,6 +61,8 @@
     display: grid;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 2em; 
+    margin-top: 4em; 
     grid-column-gap: 1em;
     grid-template-areas:
       "img title"
@@ -100,10 +112,6 @@
   padding: 0.25em;
   padding-right: 0.5em;
   padding-left: 0.5em; 
-}
-
-.welcome-section {
-  position: relative;
 }
 
 @media(max-width: 600px) {

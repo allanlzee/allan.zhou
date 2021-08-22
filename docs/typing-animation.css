@@ -6,7 +6,6 @@
 }
 
 .typewriter-section {
-    margin: 0; 
     font-family: "Source Code Pro", monospace;
     place-content: center; 
     text-align: center;
@@ -132,7 +131,7 @@
 }
 
 #aspire {
-    color: rgb(236, 12, 236); 
+    color: rgb(192, 2, 192); 
 }
 
 .typewriting-animation::before, 

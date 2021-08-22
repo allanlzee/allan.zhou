@@ -6,7 +6,10 @@
   margin: auto; 
   align-items: center; 
   position: relative; 
+}
 
+.navigation-list {
+  margin-top: 2em; 
 }
   
 .footer-link {

@@ -186,7 +186,7 @@ h3 {
 .waves-top svg {
   position: relative;
   display: block;
-  width: calc(134% + 1.3px);
+  width: calc(100% + 1.3px);
   height: 40px;
 }
 
@@ -242,6 +242,7 @@ h3 {
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  transform: rotate(180deg);
 }
 
 .white-wave svg {
@@ -252,5 +253,26 @@ h3 {
 }
 
 .white-wave .shape-fill {
-  fill: white;
+  fill: #0267fe;
+}
+
+.header-waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.header-waves svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 40px;
+}
+
+.header-waves .shape-fill{
+  fill: #19c2c2;
 }
