@@ -207,7 +207,7 @@ h3 {
 .waves-bottom svg {
   position: relative;
   display: block;
-  width: calc(134% + 1.3px);
+  width: calc(100% + 1.3px);
   height: 60px;
 }
 
@@ -227,7 +227,7 @@ h3 {
 .blue-bottom-wave svg {
   position: relative;
   display: block;
-  width: calc(134% + 1.3px);
+  width: calc(100% + 1.3px);
   height: 60px;
 }
 
@@ -248,8 +248,8 @@ h3 {
 .white-wave svg {
   position: relative;
   display: block;
-  width: calc(134% + 1.3px);
-  height: 60px;
+  width: calc(120% + 1.3px);
+  height: 40px;
 }
 
 .white-wave .shape-fill {

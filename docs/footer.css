@@ -2,7 +2,7 @@
 
 .footer-section {
   text-align: center;
-  background: white;
+  background: rgb(255, 255, 255);
   margin: auto; 
   align-items: center; 
   position: relative; 
@@ -124,13 +124,17 @@
   width: 200px;
   border-radius: 50%;
   margin: auto; 
-  margin-top: 5em; 
+  margin-top: 3em; 
 }
 
 .footer-text {
-  font-size: 18px;  
-  color: black; 
+  font-size: 18px; 
+  color: rgb(0, 69, 173);  
 }
 
-  
+#footer-name {
+  font-size: 22px; 
+  color: rgb(0, 69, 173);
+}
+
 /* End of Footer Section */

@@ -6,8 +6,8 @@
 }
 
 .welcome-grid {
-  margin-bottom: 2em; 
-  margin-top: 2em; 
+  margin-bottom: 10em; 
+  margin-top: 10em; 
 }
 
 .welcome-section {
@@ -61,7 +61,7 @@
     display: grid;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 2em; 
+    margin-bottom: 4em; 
     margin-top: 4em; 
     grid-column-gap: 1em;
     grid-template-areas:
@@ -123,4 +123,5 @@
     font-size: 16px; 
   }
 }  
+
 /* End of Introductory/Welcome Section*/
