@@ -276,3 +276,44 @@ h3 {
 .header-waves .shape-fill{
   fill: #19c2c2;
 }
+
+.header-waves-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.header-waves-opacity svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.header-waves-opacity .shape-fill {
+  fill: #19c2c2;
+}
+
+.header-waves-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.header-waves-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.header-waves-bottom .shape-fill {
+  fill: #CCFFFC;
+}
