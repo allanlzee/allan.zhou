@@ -148,8 +148,8 @@
 }
 
 .coding-projects:hover {
-   background: white;
-   animation: scale 200ms ease-in-out forwards; 
+  background: white;
+  animation: scale 200ms ease-in-out forwards; 
 }
 
 @keyframes scale {
@@ -178,25 +178,25 @@
   }
 
   .python {
-      grid-column-start: 1; 
-      grid-column-end: 2; 
-      grid-row-start: 2; 
-      grid-row-end: 3;
+    grid-column-start: 1; 
+    grid-column-end: 2; 
+    grid-row-start: 2; 
+    grid-row-end: 3;
   }
 
   .front-end-development {
-      grid-column-start: 1; 
-      grid-column-end: 2;
-      grid-row-start: 3;
-      grid-row-end: 4;
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 
   .api-projects {
-      grid-column-start: 1; 
-      grid-column-end: 2;
-      grid-row-start: 4;
-      grid-row-end: 5;
-      margin-bottom: 2em; 
+    grid-column-start: 1; 
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-bottom: 2em; 
   }
 
   .project-pictures {
