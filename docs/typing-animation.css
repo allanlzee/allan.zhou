@@ -1,7 +1,11 @@
 :root {
-    --animation-speed: 4s; 
+    --animation-speed: 3s; 
     --animation-steps: 25; 
-    --animation-delay: 5s; 
+    --animation-delay: 4s; 
+    --animation-delay-2: 7s; 
+    --animation-delay-3: 10s; 
+    --animation-delay-4: 13s; 
+    --animation-delay-5: 16s; 
     --background-color-primary: #ccfffc; 
 }
 
@@ -122,16 +126,52 @@
     color: orange; 
 }
 
+#violinist::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards; 
+}
+
+#violinist::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
 #basketball {
     color: rgb(6, 199, 6); 
+}
+
+#basketball::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards; 
+}
+
+#basketball::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
 #prog-lead {
     color: rgb(0, 162, 255); 
 }
 
+#prog-lead::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-4) forwards; 
+}
+
+#prog-lead::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-4) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
 #aspire {
     color: rgb(192, 2, 192); 
+}
+
+#aspire::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards; 
+}
+
+#aspire::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
 .typewriting-animation::before, 
