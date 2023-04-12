@@ -132,7 +132,7 @@
 
 #tops::after {
     animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards, 
-    blink 750ms steps(var(--animation-steps)) 10s; 
+    blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
 #violinist {
