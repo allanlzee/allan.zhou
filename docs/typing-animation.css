@@ -140,11 +140,11 @@
 }
 
 #violinist::before {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards; 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards; 
 }
 
 #violinist::after {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards, 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards, 
     blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
@@ -166,11 +166,11 @@
 }
 
 #prog-lead::before {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-4) forwards; 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards; 
 }
 
 #prog-lead::after {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-4) forwards, 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards, 
     blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
