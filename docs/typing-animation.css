@@ -118,8 +118,21 @@
     padding: 0.5em; 
 }
 
+#engsci {
+    color: navy;
+}
+
 #tops {
     color: red; 
+}
+
+#tops::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation)) var(--animation-delay) forwards;
+}
+
+#tops::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay) forwards, 
+    blink 750ms steps(var(--animation-steps)) 10s; 
 }
 
 #violinist {
