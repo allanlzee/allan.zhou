@@ -47,6 +47,11 @@
   text-decoration: none;
 }
 
+#linkedin {
+  color: white; 
+  text-decoration: none; 
+}
+
 .welcome-section {
   position: relative; 
   display: flex; 

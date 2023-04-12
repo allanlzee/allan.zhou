@@ -40,26 +40,6 @@
   align-items: center; 
 }
 
-/* 
-  .logo-link {
-    margin: auto;
-  }
-
-  .logo-github {
-    height: 55%; 
-    width: 55%;  
-  }
-
-  .logo-instagram {
-    height: 55%; 
-    width: 55%; 
-  }
-
-  .logo-recruit {
-    height: 55%; 
-    width: 55%; 
-} */ 
-
 .logo-list {
   display: grid;
   justify-content: center;  
