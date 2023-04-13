@@ -127,7 +127,7 @@
 }
 
 #tops::before {
-    animation: typewriter var(--animation-speed) steps(var(--animation)) var(--animation-delay-2) forwards;
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-2) forwards;
 }
 
 #tops::after {
