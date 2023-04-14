@@ -216,7 +216,8 @@ h3 {
 }
 
 .blue-bottom-wave {
-  position: absolute;
+  position: relative; 
+  margin-top: 10em;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -254,6 +255,26 @@ h3 {
 
 .white-wave .shape-fill {
   fill: #0267fe;
+}
+
+.white-top-wave {
+  position: relative; 
+  bottom: 0; 
+  left: 0; 
+  width: 100vw; 
+  overflow: hidden; 
+  line-height: 0;
+}
+
+.white-wave svg {
+  position: relative; 
+  display: block; 
+  width: calc(120% + 1.3px); 
+  height: 40px; 
+}
+
+.white-top-wave .shape-fill {
+  fill: white; 
 }
 
 .header-waves {

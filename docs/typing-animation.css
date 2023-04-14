@@ -32,8 +32,8 @@
 }
 
 .about-me-image {
-    height: 500px; 
-    width: 300px;
+    height: 65%; 
+    width: 35vw;
     border-radius: 10%; 
     grid-column-start: 2; 
     grid-column-end: 3; 
@@ -43,22 +43,12 @@
 }
 
 @media (max-width: 900px) {
-    .about-me-image {
-        margin: auto;  
-        height: 65%; 
-        width: 30vw; 
-    }
-
     .resume {
         font-size: 14px;
     }
 }
 
 @media (max-width: 750px) {
-    .about-me-image {
-        width: 32vw; 
-    }
-
     .resume {
         font-size: 12px;
     }
@@ -119,7 +109,7 @@
 }
 
 #engsci {
-    color: navy;
+    color: rgb(0, 162, 255); 
 }
 
 #tops {
@@ -162,7 +152,7 @@
 }
 
 #prog-lead {
-    color: rgb(0, 162, 255); 
+    color: rgb(10, 171, 10);
 }
 
 #prog-lead::before {

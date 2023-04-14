@@ -1,6 +1,8 @@
 /* Project Section */
 .my-projects {
   position: relative; 
+  padding-top: auto;
+  padding-bottom: 0;
   display: flex; 
   flex-direction: column;
   align-items: center;
@@ -37,26 +39,6 @@
   color: darkblue;
 }
 
-.my-projects {
-  position: relative; 
-  display: flex; 
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  align-items: center;
-  background: linear-gradient(45deg, #54dbf3, #ffc23f);
-}
-  
-.portfolio-img {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.portfolio-img:hover {
-  animation: shake 0.75s; 
-  animation-iteration-count: infinite; 
-}
   
 @keyframes shake {
   /* Credits: w3schools */ 

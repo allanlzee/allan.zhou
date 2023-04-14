@@ -1,16 +1,24 @@
 .robotics-section {
     margin: 0;
     padding: 0; 
+    position: relative; 
+    align-items: center;
     box-sizing: border-box; 
 }
 
+.robotics-grid {
+    position: relative; 
+    margin: 0; 
+    padding: 0;
+}
+
 .koda {
-    margin: 10% auto; 
+    margin: 10% auto 0 auto; 
     padding: 0; 
     background-color: antiquewhite; 
     border-radius: 10px; 
-    height: 300px; 
-    width: 600px; 
+    height: 60vh; 
+    width: 80vw; 
     overflow: hidden;
     border: 1px saddlebrown solid; 
     box-shadow: 20px hsl(0, 0%, 3%); 
@@ -19,16 +27,14 @@
 
 .slide {
     float: left; 
-    width: 600px; 
-    height: 300px; 
+    object-fit: contain;
 }
 
 .koda-slides {
-    width: 2400px; 
     -webkit-animation-name: slide; 
     animation-name: slide; 
-    -webkit-animation-duration: 10s; 
-    animation-duration: 10s; 
+    -webkit-animation-duration: 20s; 
+    animation-duration: 20s; 
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite; 
     -webkit-animation-play-state: running; 
@@ -36,6 +42,11 @@
     display: flex; 
     justify-content: center; 
     align-items: center;
+}
+
+.robot-pictures {
+    width: auto;
+    height: auto;
 }
 
 .slide:nth-child(1) {
@@ -67,7 +78,5 @@
         margin-left: calc(-600px * 5); 
     }
 
-    87.5% {
-        margin-left: calc(-600px * 6); 
-    }
+    
 }
