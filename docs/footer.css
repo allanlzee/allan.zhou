@@ -34,29 +34,23 @@
 }
 
 .logo-list {
-  display: grid; 
-  margin: auto; 
+  display: grid;  
   margin-top: 3em; 
-  align-items: center; 
-}
-
-.logo-list {
-  display: grid;
-  justify-content: center;  
-  align-items: center;
-  flex-direction: column; 
+  place-items: center;
+  justify-items: center; 
+  grid-template-columns: 3;
 }
 
 .logo-github {
   height: 50%; 
-  width: 50%; 
-  margin: auto; 
+  width: 20%; 
+  grid-column: 1;
 }
 
 .logo-instagram {
   height: 25%; 
   width: 25%; 
-  margin: auto; 
+  grid-column: 2; 
   margin-top: 1.25em; 
 }
 
@@ -64,6 +58,12 @@
   height: 55%; 
   width: 55%;
   margin: auto;  
+}
+
+.logo-linkedin {
+  height: 50%;
+  width: 50%;
+  grid-column: 3;
 }
 
 @media (min-width: 1050px) {

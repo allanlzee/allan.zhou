@@ -74,20 +74,19 @@
 }
 
 .resume {
-    grid-column-start: 3; 
-    grid-column-end: 4; 
-    grid-row-start: 2; 
-    grid-row-end: 3; 
-    text-align: left; 
+    text-align: center; 
     margin: auto; 
+    justify-self: center; 
 }
 
 .resume-heading {
-    font-size: 100%; 
+    font-size: 125%; 
+    color: black;
 }
 
 .list-point {
     font-size: 100%; 
+    list-style-type: none;
 }
 
 .section-title-typewriter {
@@ -95,7 +94,6 @@
     text-align: center;
     font-size: 2.75em;
     margin-bottom: 1em; 
-    text-align: center; 
 }
 
 .typewriting-animation {

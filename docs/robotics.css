@@ -1,9 +1,16 @@
 .robotics-section {
     margin: 0;
     padding: 0; 
-    position: relative; 
-    align-items: center;
-    box-sizing: border-box; 
+    background: #bada55;
+}
+
+.section-title-robotics {
+    color: rgb(11, 135, 243); 
+    text-align: center;
+    font-size: 2.75em;
+    margin-top: 0;
+    padding: 0;
+    margin-bottom: 0.5em; 
 }
 
 .robotics-grid {
@@ -13,70 +20,81 @@
 }
 
 .koda {
-    margin: 10% auto 0 auto; 
-    padding: 0; 
-    background-color: antiquewhite; 
-    border-radius: 10px; 
-    height: 60vh; 
-    width: 80vw; 
-    overflow: hidden;
-    border: 1px saddlebrown solid; 
-    box-shadow: 20px hsl(0, 0%, 3%); 
-    z-index: -1; 
+    padding: 5em;
 }
 
-.slide {
+.robot-slide {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer; 
+}
+
+.prev, 
+.next {
+    cursor: pointer; 
+    position: absolute; 
+    top: 40%; 
+    width: auto; 
+    padding: 16px; 
+    margin-top: -50px; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 20px; 
+    border-radius: 0 3px 3px 0; 
+    user-select: none; 
+    -webkit-user-select: none; 
+}
+
+.next {
+    right: 0; 
+    border-radius: 3px 0 0 3px; 
+}
+
+.prev:hover, 
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.number-text {
+    color: #f2f2f2;
+    font-size: 12px; 
+    padding: 8px 12px; 
+    position: absolute; 
+    top: 0;
+}
+
+.row:after {
+    content: ""; 
+    display: table; 
+    clear: both; 
+}
+
+.column {
     float: left; 
-    object-fit: contain;
+    width: 12.5%; 
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
 }
 
 .koda-slides {
-    -webkit-animation-name: slide; 
-    animation-name: slide; 
-    -webkit-animation-duration: 20s; 
-    animation-duration: 20s; 
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite; 
-    -webkit-animation-play-state: running; 
-    animation-play-state: running; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
+    position: relative; 
+    box-sizing: border-box;
+    border-width: 1em; 
+    border-color:cornflowerblue;
+    border-style: groove;
+    border-radius: 1em;
 }
 
 .robot-pictures {
     width: auto;
     height: auto;
-}
-
-.slide:nth-child(1) {
-    z-index: 1; 
-}
-
-@keyframes slide {
-    12.5% {
-        margin-left: 0px; 
-    }
-
-    25.0% {
-        margin-left: calc(-600px * 1);
-    }
-
-    37.5% {
-        margin-left: calc(-600px * 2);
-    }
-
-    50.0% {
-        margin-left: calc(-600px * 3); 
-    }
-
-    67.5% {
-        margin-left: calc(-600px * 4); 
-    }
-
-    75.0% {
-        margin-left: calc(-600px * 5); 
-    }
-
-    
+    vertical-align: middle; 
 }

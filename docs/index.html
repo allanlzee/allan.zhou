@@ -22,6 +22,8 @@
     />
 
     <link rel="icon" type="image/x-icon" href="Images/AllanZhouPortfolio.png" /> 
+
+    <script src="slides.js"></script>
     
   </head>
 
@@ -40,7 +42,7 @@
         <p class ="contact-info">
           <b id ="contact-info-name">Allan Zhou</b> <br />
           <span id="contact-info-description">allanlinzhou@gmail.com <br />
-          <a id ="linkedin" href="https://linkedin.com/allanlzee" target="_blank">LinkedIn: @allanlzee</a><br /> 
+          <a id ="linkedin" href="https://www.linkedin.com/in/allanlzee/" target="_blank">LinkedIn: @allanlzee</a><br /> 
           <a id ="github" href="https://github.com/allanlzee" target="_blank">GitHub: @allanlzee</a>
           </span>
         </p>
@@ -107,17 +109,17 @@
 
       <div class="typewriter-sentences">
 
-        <p class="typewriting-animation" id="engsci">University of Toronto Engineering Science 2T7 </p>
-        <p class="typewriting-animation" id="tops">Grade 12 TOPS Student </p> 
-        <p class="typewriting-animation" id="prog-lead">Captain of FRC Team 6135 </p> 
-        <p class="typewriting-animation" id="violinist">Level 10 Violinist </p> 
-        <p class="typewriting-animation" id="aspire">Aspiring Software Engineer </p> <br>
+        <p class="typewriting-animation" id="engsci">University of Toronto Engineering Science 2T7</p>
+        <p class="typewriting-animation" id="tops">Grade 12 TOPS Student</p> 
+        <p class="typewriting-animation" id="prog-lead">Captain of FRC Team 6135</p> 
+        <p class="typewriting-animation" id="violinist">Level 10 Violinist</p> 
+        <p class="typewriting-animation" id="aspire">Aspiring Software Engineer</p> <br>
 
       </div> 
 
       <div class="about-me-grid">
 
-        <img src="Images/resume.jpg" class="about-me-image"/>
+        <!-- <img src="Images/resume.jpg" class="about-me-image"/> -->
 
         <div class="resume">
           <p>
@@ -144,16 +146,23 @@
                 Captain, Arctos 6135 
                 <br>June 2022 - PRESENT
               </li>
+            </ul>
+
+            <ul>
               <li class="list-point">
                 Lead Software Engineer, Arctos 6135 
                 <br>June 2021 - June 2022
               </li>
+            </ul>
 
+            <ul>
               <li class="list-point">
                 Club President, Bloor C.I. Intel & Dell AI for Youth, 
                 <br>June 2021 - June 2022
               </li>
+            </ul>
 
+            <ul>
               <li class="list-point">
                 FIRST Camp Ursa Minor Counsellor
                 <br>May - August 2021
@@ -166,24 +175,28 @@
               <li class="list-point">
                 Java: WPILib and Android App Development
               </li>
+            </ul>
 
+            <ul>
               <li class="list-point">
                 Python: OpenCV, Tensorflow
               </li>
+            </ul>
 
+            <ul>
               <li class="list-point">
                 HTML, CSS, Javascript: Web Development
               </li>
+            </ul>
 
+            <ul>
               <li class="list-point">
                 Version Control: Git, Github
               </li>
             </ul>
           </p>
         </div>
-
       </div>
-
     </section>
 
     <!--Projects Section-->
@@ -240,38 +253,80 @@
 
   <!--Robotics Section-->
   <section class="robotics-section" id="Robotics">
+    <h2 class="section-title-robotics">Robotics</h2>
 
-    <div class="robotics-grid">
       <div class="koda">
-        <b>Koda - 2023 FRC Robot</b>
-
         <div class="koda-slides">
-          <div class="slide 1">
-            <img src="Images/robotics/robot1.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">1 / 8</div>
+            <img src="Images/robotics/robot1.jpeg" class="robot-pictures" style="width:100%"/>
           </div>
-          <div class="slide 2">
-            <img src="Images/robotics/robot2.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">2 / 8</div>
+            <img src="Images/robotics/robot2.jpeg" class="robot-pictures" style="width:100%"/>
           </div>
-          <div class="slide 3">
-            <img src="Images/robotics/robot3.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">3 / 8</div>
+            <img src="Images/robotics/robot3.jpeg" class="robot-pictures" style="width:100%"/>
           </div>
-          <div class="slide 4">
-            <img src="Images/robotics/robot4.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">4 / 8</div>
+            <img src="Images/robotics/robot4.jpeg" class="robot-pictures" style="width:100%"/>
           </div>
-          <div class="slide 5">
-            <img src="Images/robotics/robot5.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">5 / 8</div>
+            <img src="Images/robotics/robot5.jpeg" class="robot-pictures" style="width:100%"/>
           </div>
-          <div class="slide 6">
-            <img src="Images/robotics/robot6.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">6 / 8</div>
+            <img src="Images/robotics/robot6.jpeg" class="robot-pictures" style="width:100%"/>
           </div>
-          <div class="slide 7">
-            <img src="Images/robotics/robot7.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">7 / 8</div>
+            <img src="Images/robotics/robot7.jpeg" class="robot-pictures" style="width:100%"/>
           </div>
-          <div class="slide 8">
-            <img src="Images/robotics/robot8.jpeg" class="robot-pictures"/>
+          <div class="robot-slide">
+            <div class="number-text">8 / 8</div>
+            <img src="Images/robotics/robot8.png" class="robot-pictures" style="width:100%"/>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot1.jpeg" style="width:100%" onclick="currentSlide(1)">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot2.jpeg" style="width:100%" onclick="currentSlide(2)">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot3.jpeg" style="width:100%" onclick="currentSlide(3)">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot4.jpeg" style="width:100%" onclick="currentSlide(4)">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot5.jpeg" style="width:100%" onclick="currentSlide(5)">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot6.jpeg" style="width:100%" onclick="currentSlide(6)">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot7.jpeg" style="width:100%" onclick="currentSlide(7)">
+            </div>
+
+            <div class="column">
+              <img class="demo cursor" src="Images/robotics/robot8.jpeg" style="width:100%" onclick="currentSlide(8)">
+            </div>
           </div>
         </div>
-      </div>
     </div>
 
     <div class="blue-bottom-wave">
@@ -342,7 +397,7 @@
       <a href="#Welcome" class="footer__link">Welcome</a> <br>
       <a href="#AboutMe" class="footer__link">About Me</a> <br>
       <a href="#Projects" class="footer__link">Projects</a> <br>
-      <a href="#Robotics" class="footer__link">Robotics</a>
+      <a href="#Robotics" class="footer__link">Robotics</a> <br>
       <a href="#Violin" class="footer__link">Violin</a> <br>
       <a href="#Footer" class="footer__link">References</a> <br>
     </div>
@@ -356,11 +411,7 @@
         <img src="Images/instagram.jpeg" class="logo-instagram"/> 
       </a>
 
-      <a class="logo-link" id="recruiters" href="https://www.smartr.me/profile" target="_blank">
-        <img src="Images/recruit.png" class="logo-recruit"/> 
-      </a>
-
-      <a class="logo-link" id="linkedin" href="https://linkedin.com/allanlzee" target="_blank">
+      <a class="logo-link" id="linkedin" href="https://www.linkedin.com/in/allanlzee/" target="_blank">
         <img src="Images/linkedin.png" class="logo-linkedin"/> 
       </a>
     </div>
