@@ -1,7 +1,7 @@
 .robotics-section {
     margin: 0;
     padding: 0; 
-    background: #bada55;
+    background: #afeeee;
 }
 
 .section-title-robotics {
@@ -13,6 +13,14 @@
     margin-bottom: 0.5em; 
 }
 
+.robot-name-subtitle {
+    color: #ff4040; 
+    background-color: #3399ff;
+    text-align: center; 
+    padding: 1em; 
+    font-size: 2.0em; 
+}
+
 .robotics-grid {
     position: relative; 
     margin: 0; 
@@ -20,7 +28,9 @@
 }
 
 .koda {
-    padding: 5em;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 1em; 
 }
 
 .robot-slide {
@@ -35,7 +45,7 @@
 .next {
     cursor: pointer; 
     position: absolute; 
-    top: 40%; 
+    top: 50%; 
     width: auto; 
     padding: 16px; 
     margin-top: -50px; 
@@ -74,6 +84,11 @@
 .column {
     float: left; 
     width: 12.5%; 
+    overflow: auto; 
+}
+
+.column img {
+    object-fit: cover; 
 }
 
 .demo {
@@ -91,6 +106,8 @@
     border-color:cornflowerblue;
     border-style: groove;
     border-radius: 1em;
+    margin: 0 15vw 0 15vw;
+
 }
 
 .robot-pictures {
