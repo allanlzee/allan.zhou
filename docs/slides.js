@@ -2,24 +2,42 @@ let slideIndex = 1;
 
 showSlides(slideIndex); 
 
-function plusSlides(n) {
-    showSlides(slideIndex += n); 
+/**
+ * 
+ * @param {*} slideNum desired slide number (integer)
+ * @param {*} slideClass desired slide string 
+ * @param {*} dotClass desired dot string
+ */
+function plusSlides(slideNum, slideClass, dotClass) {
+    showSlides(slideIndex += slideNum, slideClass, dotClass); 
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+/**
+ * 
+ * @param {*} slideNum desired slide number (integer)
+ * @param {*} slideClass desired slide string 
+ * @param {*} dotClass desired dot string
+ */
+function currentSlide(slideNum, slideClass, dotClass) {
+    showSlides(slideIndex = slideNum, slideClass, dotClass);
 }
 
-function showSlides(n) {
+/**
+ * 
+ * @param {*} slideNum desired slide number (integer)
+ * @param {*} slideClass desired slide string 
+ * @param {*} dotClass desired dot string
+ */
+function showSlides(slideNum, slideClass, dotClass) {
     let i; 
-    let slides = document.getElementsByClassName("robot-slide"); 
-    let dots = document.getElementsByClassName("demo"); 
+    let slides = document.getElementsByClassName(slideClass); 
+    let dots = document.getElementsByClassName(dotClass); 
 
-    if (n > slides.length) {
+    if (slideNum > slides.length) {
         slideIndex = 1;
     }
 
-    if (n < 1) {
+    if (slideNum < 1) {
         slideIndex = slides.length; 
     }
 

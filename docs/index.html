@@ -25,8 +25,15 @@
 
     <script src="slides.js"></script>
     <script>
+      var robotSlideClass = "robot-slide";
+      var robotDotClass = "robot-demo"; 
+
+      var houstonSlideClass = "houston-slide"; 
+      var houstonDotClass = "houston-demo"; 
+
       document.addEventListener("DOMContentLoaded", function() {
-        showSlides(1);
+        showSlides(1, robotSlideClass, robotDotClass);
+        showSlides(1, houstonSlideClass, houstonDotClass);
       })
     </script>
     
@@ -261,7 +268,6 @@
     <h2 class="section-title-robotics">Robotics - Arctos 6135</h2>
 
       <div class="koda">
-
         <div class="koda-slides">
           <h3 class="robot-name-subtitle">2023 Charged Up - Koda</h3>
 
@@ -298,48 +304,149 @@
             <img src="Images/robotics/robot8.png" class="robot-pictures" style="width:100%"/>
           </div>
 
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="plusSlides(-1, robotSlideClass, robotDotClass)">❮</a>
+          <a class="next" onclick="plusSlides(1, robotSlideClass, robotDotClass)">❯</a>
 
           <div class="row">
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot1.png" style="width:100%" onclick="currentSlide(1)">
+              <img class="robot-demo cursor" src="Images/robotics/robot1.png" style="width:100%" onclick="currentSlide(1, robotSlideClass, robotDotClass)">
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot2.png" style="width:100%" onclick="currentSlide(2)">
+              <img class="robot-demo cursor" src="Images/robotics/robot2.png" style="width:100%" onclick="currentSlide(2, robotSlideClass, robotDotClass)">
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot3.png" style="width:100%" onclick="currentSlide(3)">
+              <img class="robot-demo cursor" src="Images/robotics/robot3.png" style="width:100%" onclick="currentSlide(3, robotSlideClass, robotDotClass)">
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot4.png" style="width:100%" onclick="currentSlide(4)">
+              <img class="robot-demo cursor" src="Images/robotics/robot4.png" style="width:100%" onclick="currentSlide(4, robotSlideClass, robotDotClass)">
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot5.png" style="width:100%" onclick="currentSlide(5)">
+              <img class="robot-demo cursor" src="Images/robotics/robot5.png" style="width:100%" onclick="currentSlide(5, robotSlideClass, robotDotClass)">
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot6.png" style="width:100%" onclick="currentSlide(6)">
+              <img class="robot-demo cursor" src="Images/robotics/robot6.png" style="width:100%" onclick="currentSlide(6, robotSlideClass, robotDotClass)">
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot7.png" style="width:100%" onclick="currentSlide(7)">
+              <img class="robot-demo cursor" src="Images/robotics/robot7.png" style="width:100%" onclick="currentSlide(7, robotSlideClass, robotDotClass)">
             </div>
 
             <div class="column">
-              <img class="demo cursor" src="Images/robotics/robot8.png" style="width:100%" onclick="currentSlide(8)">
+              <img class="robot-demo cursor" src="Images/robotics/robot8.png" style="width:100%" onclick="currentSlide(8, robotSlideClass, robotDotClass)">
             </div>
           </div>
         </div>
+      </div>
 
-        <script>
-  
-        </script>
-    </div>
+      <div class="callisto">
+        <div class="callisto-slides"> 
+          <h3 class="robot-name-subtitle">2023 Rapid React - Callisto</h3>
+
+            <div class="houston-slide"> 
+              <div class="number-text">1 / 10</div>
+              <img src="Images/houston/robot4.JPG" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">2 / 10</div>
+              <img src="Images/houston/robot5.jpg" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">3 / 10</div>
+              <img src="Images/houston/robot6.jpeg" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">4 / 10</div>
+              <img src="Images/houston/robot7.JPG" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">5 / 10</div>
+              <img src="Images/houston/robot8.JPG" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">6 / 10</div>
+              <img src="Images/houston/robot9.jpg" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">7 / 10</div>
+              <img src="Images/houston/robot10.JPG" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">8 / 10</div>
+              <img src="Images/houston/robot11.JPG" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">9 / 10</div>
+              <img src="Images/houston/robot12.JPG" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <div class="houston-slide"> 
+              <div class="number-text">10 / 10</div>
+              <img src="Images/houston/robot13.JPG" class="robot-pictures" style="width:100%"/> 
+            </div>
+
+            <a class="callisto-prev" onclick="plusSlides(-1, houstonSlideClass, houstonDotClass)">❮</a>
+            <a class="callisto-next" onclick="plusSlides(1, houstonSlideClass, houstonDotClass)">❯</a>
+
+            <div class="row">
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot4.JPG" style="width:100%" onclick="currentSlide(1, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot5.jpg" style="width:100%" onclick="currentSlide(2, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot6.jpeg" style="width:100%" onclick="currentSlide(3, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot7.JPG" style="width:100%" onclick="currentSlide(4, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot8.JPG" style="width:100%" onclick="currentSlide(5, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot9.jpg" style="width:100%" onclick="currentSlide(6, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot10.JPG" style="width:100%" onclick="currentSlide(7, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot11.JPG" style="width:100%" onclick="currentSlide(8, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot12.JPG" style="width:100%" onclick="currentSlide(9, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+              <div class="callisto-column">
+                <img class="houston-demo cursor" src="Images/houston/robot13.JPG" style="width:100%" onclick="currentSlide(10, houstonSlideClass, houstonSlideClass)">
+              </div>
+
+            </div>
+
+        </div>
+      </div>
+
+
 
     <div class="blue-bottom-wave">
       <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

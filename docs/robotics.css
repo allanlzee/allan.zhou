@@ -27,6 +27,7 @@
     padding: 0;
 }
 
+/* Koda's Section */ 
 .koda {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -91,11 +92,11 @@
     object-fit: cover; 
 }
 
-.demo {
+.robot-demo {
     opacity: 0.6;
 }
 
-.active, .demo:hover {
+.active, .robot-demo:hover {
     opacity: 1;
 }
 
@@ -107,11 +108,58 @@
     border-style: groove;
     border-radius: 1em;
     margin: 0 15vw 0 15vw;
-
 }
 
 .robot-pictures {
     width: auto;
     height: auto;
     vertical-align: middle; 
+}
+
+/* Callisto's Section */
+.callisto {
+    padding-left: 5vw; 
+    padding-right: 5vw; 
+    padding-top: 2em; 
+}
+
+.callisto-slides {
+    position: relative; 
+    box-sizing: border-box;
+    border-width: 1em; 
+    border-color:cornflowerblue;
+    border-style: groove;
+    border-radius: 1em;
+    margin: 0 15vw 0 15vw;
+}
+
+.houston-slide {
+    display: none; 
+}
+
+.callisto-column {
+    float: left; 
+    width: 10.0%; 
+    overflow: auto; 
+}
+
+.callisto-prev, 
+.callisto-next {
+    cursor: pointer; 
+    position: absolute; 
+    top: 50%; 
+    width: auto; 
+    padding: 16px; 
+    margin-top: -50px; 
+    color: white; 
+    font-weight: bold; 
+    font-size: 20px; 
+    border-radius: 0 3px 3px 0; 
+    user-select: none; 
+    -webkit-user-select: none; 
+}
+
+.callisto-next {
+    right: 0; 
+    border-radius: 3px 0 0 3px; 
 }
