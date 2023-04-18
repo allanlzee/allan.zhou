@@ -79,14 +79,30 @@
     justify-self: center; 
 }
 
+.resume-header-div {
+    padding: 1em;
+}
+
+.resume-header-div:hover {
+    cursor: pointer; 
+    background-color: white;
+    animation: scale 200ms ease-in-out forwards; 
+}
+
 .resume-heading {
     font-size: 125%; 
     color: black;
+    margin: 0.5em; 
+}
+
+.resume-list {
+    display: none;
 }
 
 .list-point {
     font-size: 100%; 
     list-style-type: none;
+    padding-bottom: 0.5em;
 }
 
 .section-title-typewriter {

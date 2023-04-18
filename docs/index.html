@@ -23,7 +23,9 @@
 
     <link rel="icon" type="image/x-icon" href="Images/AllanZhouPortfolio.png" /> 
 
-    <script src="slides.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/resume.js"></script>
+
     <script>
       var robotSlideClass = "robot-slide";
       var robotDotClass = "robot-demo"; 
@@ -134,79 +136,76 @@
         <!-- <img src="Images/resume.jpg" class="about-me-image"/> -->
 
         <div class="resume">
-          <p>
-            <b class="resume-heading">Experience</b> <br>
+          
+          <div class="resume-header-div">
+            <a class="resume-heading" onclick="showList(0)">
+              <b>Experience</b>
+            </a> 
+          </div>
+
+          <ul class="resume-list">
+            <li class="list-point">
+              University Settlement: Lifeguard & Swim Instructor
+              <br>January 2022 - PRESENT
+            </li>
+          
+            <li class="list-point">
+              A&W: Crew Member
+              <br>June - October 2021
+            </li>
+          </ul>
+
+          <div class="resume-header-div">
+            <a class="resume-heading" onclick="showList(1)">
+              <b>Leadership and Volunteering</b>
+            </a> 
+          </div>
+          
+          <ul class="resume-list">
+            <li class="list-point"> 
+              Captain, Arctos 6135 
+              <br>June 2022 - PRESENT
+            </li>
             
-            <ul>
-              <li class="list-point">
-                University Settlement: Lifeguard & Swim Instructor
-                <br>January 2022 - PRESENT
-              </li>
-            </ul>
-
-            <ul>
-              <li class="list-point">
-                A&W: Crew Member
-                <br>June - October 2021
-              </li>
-            </ul>
-
-            <b class="resume-heading">Leadership and Volunteering</b> <br>
-
-            <ul>
-              <li class="list-point"> 
-                Captain, Arctos 6135 
-                <br>June 2022 - PRESENT
-              </li>
-            </ul>
-
-            <ul>
-              <li class="list-point">
-                Lead Software Engineer, Arctos 6135 
-                <br>June 2021 - June 2022
-              </li>
-            </ul>
-
-            <ul>
-              <li class="list-point">
-                Club President, Bloor C.I. Intel & Dell AI for Youth, 
-                <br>June 2021 - June 2022
-              </li>
-            </ul>
-
-            <ul>
-              <li class="list-point">
-                FIRST Camp Ursa Minor Counsellor
-                <br>May - August 2021
-              </li>
-            </ul>
+            <li class="list-point">
+              Lead Software Engineer, Arctos 6135 
+              <br>June 2021 - June 2022
+            </li>
+            
+            <li class="list-point">
+              Club President, Bloor C.I. Intel & Dell AI for Youth, 
+              <br>June 2021 - June 2022
+            </li>
+            
+            <li class="list-point">
+              FIRST Camp Ursa Minor Counsellor
+              <br>May - August 2021
+            </li>
+          </ul>
               
-            <b class="resume-heading">Technology</b> <br>
+          <div class="resume-header-div">
+            <a class="resume-heading" onclick="showList(2)">
+              <b>Technology</b>
+            </a> 
+          </div>
 
-            <ul>
-              <li class="list-point">
-                Java: WPILib and Android App Development
-              </li>
-            </ul>
-
-            <ul>
-              <li class="list-point">
-                Python: OpenCV, Tensorflow
-              </li>
-            </ul>
-
-            <ul>
-              <li class="list-point">
-                HTML, CSS, Javascript: Web Development
-              </li>
-            </ul>
-
-            <ul>
-              <li class="list-point">
-                Version Control: Git, Github
-              </li>
-            </ul>
-          </p>
+          <ul class="resume-list">
+            <li class="list-point">
+              Java: WPILib and Android App Development
+            </li>
+          
+            <li class="list-point">
+              Python: OpenCV, Tensorflow
+            </li>
+            
+            <li class="list-point">
+              HTML, CSS, Javascript: Web Development
+            </li>
+            
+            <li class="list-point">
+              Version Control: Git, Github
+            </li>
+          </ul>
         </div>
       </div>
     </section>
