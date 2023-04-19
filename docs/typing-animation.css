@@ -74,9 +74,9 @@
 }
 
 .resume {
-    text-align: center; 
+    text-align: center;
+    justify-content: center; 
     margin: auto; 
-    justify-self: center; 
 }
 
 .resume-header-div {
@@ -96,13 +96,16 @@
 }
 
 .resume-list {
-    
+    display: inline-block;
+    text-align: left; 
+    justify-self: center;
 }
 
 .list-point {
+    display: block;
+    text-align: left;
     font-size: 100%; 
-    list-style-type: none;
-    padding-bottom: 0.5em;
+    padding-bottom: 1.0em;
 }
 
 .section-title-typewriter {

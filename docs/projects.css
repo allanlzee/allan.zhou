@@ -111,6 +111,7 @@
 
 .coding-projects {
   color: rgb(21, 11, 155);
+  padding-bottom: 0.75em;
 }
 
 .coding-projects:hover {
@@ -169,9 +170,13 @@
     margin-right: auto;
     margin-left: auto; 
     margin-top: 1em; 
-    margin-bottom: 2em;
+    margin-bottom: 2.5em;
     width: 70%; 
     height: 40%; 
+  }
+
+  .coding-projects {
+    padding-bottom: 0.25em;
   }
 }
 
