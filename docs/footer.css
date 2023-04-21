@@ -2,10 +2,13 @@
 
 .footer-section {
   text-align: center;
-  background: rgb(255, 255, 255);
-  margin: auto; 
+  background: linear-gradient(60deg, #fe0256, #0104af); 
+  margin: auto auto 0 auto; 
   align-items: center; 
   position: relative; 
+  z-index: -1;
+  bottom: 0;
+  height: calc(100vh + 50px);  
 }
 
 .navigation-list {
@@ -14,22 +17,22 @@
   
 .footer-link {
   font-size: 24px;
-  color: darkblue;
+  color: white;
 }
 
 .foot-section-subheading {
   font-size: 2rem; 
-  color: darkblue; 
+  color: white; 
 }
 
 .footer-link-violin {
   font-size: 24px; 
-  color: darkblue; 
+  color: white; 
 }
 
 .footer__link {
   text-decoration: none;
-  color: black; 
+  color: white; 
   font-size: 1.25em; 
 }
 
@@ -109,12 +112,12 @@
 
 .footer-text {
   font-size: 18px; 
-  color: rgb(0, 69, 173);  
+  color: white;  
 }
 
 #footer-name {
   font-size: 22px; 
-  color: rgb(0, 69, 173);
+  color: white;
 }
 
 /* End of Footer Section */
