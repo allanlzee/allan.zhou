@@ -22,7 +22,7 @@
 }
 
 .about-me-grid {
-    display: grid; 
+    display: flex; 
     grid-column-gap: 2em; 
 }
 
@@ -82,6 +82,7 @@
 
 .resume-header-div {
     padding: 1em;
+    width: 50vw;
 }
 
 .resume-header-div:hover {
@@ -91,8 +92,8 @@
 }
 
 .resume-heading {
-    font-size: 125%; 
-    color: black;
+    font-size: 140%; 
+    color: rgb(0, 60, 255);
     margin: 0.5em; 
 }
 
@@ -247,5 +248,15 @@
 @keyframes disappear {
     to {
         background: var(--background-color-primary);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%; 
+    }
+
+    100% {
+        opacity: 100%; 
     }
 }

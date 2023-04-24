@@ -17,7 +17,7 @@
     color: #ff4040; 
     background-color: #3399ff;
     text-align: center; 
-    padding: 1em; 
+    padding: 1.25em; 
     font-size: 4vw; 
 }
 
@@ -25,6 +25,30 @@
     position: relative; 
     margin: 0; 
     padding: 0;
+}
+
+.github {
+    position: absolute;
+    margin: 5px;
+    top: 0%;
+    right: 0%;
+    height: 4vw;
+    width: 4vw;
+}
+
+@keyframes scale-github {
+    to {
+      transform: scale(1.25); 
+    }
+  }
+
+.github:hover {
+    cursor: pointer; 
+    animation: scale-github 200ms ease-in-out forwards; 
+}
+
+.logo-img {
+    border-radius: 50%; 
 }
 
 /* Koda's Section */ 
@@ -65,7 +89,7 @@
 
 .prev:hover, 
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(33, 99, 255, 0.8);
 }
 
 .number-text {
@@ -162,4 +186,9 @@
 .callisto-next {
     right: 0; 
     border-radius: 3px 0 0 3px; 
+}
+
+.callisto-prev:hover,
+.callisto-next:hover {
+    background-color: rgba(33, 99, 255, 0.8);
 }
