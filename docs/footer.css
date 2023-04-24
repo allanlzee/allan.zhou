@@ -1,11 +1,14 @@
 /* Footer Section */
 
 .footer-section {
+  position: relative; 
+  display: flex; 
+  flex-direction: column;
   text-align: center;
   background: rgb(255, 255, 255);
   margin: auto; 
   align-items: center; 
-  position: relative; 
+  /* position: relative; */ 
 }
 
 .navigation-list {
@@ -33,37 +36,35 @@
   font-size: 1.25em; 
 }
 
+.logo-link {
+  align-self: center;
+}
+
 .logo-list {
-  display: grid;  
+  display: flex;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
   margin-top: 3em; 
-  place-items: center;
-  justify-items: center; 
-  grid-template-columns: 3;
+  background-color: white;
+}
+
+.logo-picture {
+  justify-self: center; 
 }
 
 .logo-github {
   height: 50%; 
-  width: 20%; 
-  grid-column: 1;
+  width: 50%; 
 }
 
 .logo-instagram {
-  height: 25%; 
-  width: 25%; 
-  grid-column: 2; 
+  height: 40%; 
+  width: 40%; 
   margin-top: 1.25em; 
-}
-
-.logo-recruit {
-  height: 55%; 
-  width: 55%;
-  margin: auto;  
 }
 
 .logo-linkedin {
   height: 50%;
   width: 50%;
-  grid-column: 3;
+  margin-top: 1.25em;
 }
 
 @media (min-width: 1050px) {
@@ -73,12 +74,13 @@
     align-items: center;
     margin-left: 1em; 
     flex-direction: row; 
+    grid-template-columns: 3;
   }
 
   .logo-github {
     margin: none; 
-    height: 50%; 
-    width: 50%; 
+    height: 100%; 
+    width: 100%; 
   }
 
   .logo-instagram {
