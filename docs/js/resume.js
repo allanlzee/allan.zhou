@@ -17,6 +17,7 @@ function showList(listNum) {
             resumeLists[i].style.animation = "fade-in 1250ms ease-in-out forwards";
             resumeLists[i].style.display = "block"; 
         } else {
+            resumeLists[i].style.animation = "fade-out 1250ms"; 
             resumeLists[i].style.display = "none"; 
         }
     }
