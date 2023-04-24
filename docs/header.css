@@ -90,7 +90,7 @@
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -3em;
+    left: -2em;
     width: calc(100% + 6.5em);
   }
 }
