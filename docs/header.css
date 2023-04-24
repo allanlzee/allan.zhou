@@ -15,7 +15,7 @@
 }
 
 .intro_img {
-  width: var(--img-width);
+  width: var(--img-width + 10%);
   box-shadow: var(--box-shadow);
 }
   
@@ -61,7 +61,7 @@
   background: linear-gradient(60deg, #fe0256, #0104af); 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .welcome-grid {
     display: grid;
     width: 100%;
@@ -90,8 +90,8 @@
     grid-row: 2;
     text-align: right;
     position: relative;
-    left: -6em;
-    width: calc(100% + 6em);
+    left: -3em;
+    width: calc(100% + 6.5em);
   }
 }
 

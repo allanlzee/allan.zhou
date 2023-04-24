@@ -87,7 +87,10 @@
     border-radius: 3px 0 0 3px; 
 }
 
-.prev:hover, 
+.prev:hover {
+    background-color: rgba(255, 40, 40, 0.6);
+} 
+
 .next:hover {
     background-color: rgba(33, 99, 255, 0.8);
 }
@@ -188,7 +191,10 @@
     border-radius: 3px 0 0 3px; 
 }
 
-.callisto-prev:hover,
+.callisto-prev:hover {
+    background-color: rgba(255, 40, 40, 0.6);
+}
+
 .callisto-next:hover {
     background-color: rgba(33, 99, 255, 0.8);
 }
