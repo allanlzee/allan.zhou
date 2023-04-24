@@ -18,7 +18,7 @@
     background-color: #3399ff;
     text-align: center; 
     padding: 1em; 
-    font-size: 2.0em; 
+    font-size: 4vw; 
 }
 
 .robotics-grid {
@@ -46,7 +46,7 @@
 .next {
     cursor: pointer; 
     position: absolute; 
-    top: 50%; 
+    top: 60%; 
     width: auto; 
     padding: 16px; 
     margin-top: -50px; 
@@ -147,10 +147,10 @@
 .callisto-next {
     cursor: pointer; 
     position: absolute; 
-    top: 50%; 
+    top: 55%; 
     width: auto; 
     padding: 16px; 
-    margin-top: -50px; 
+    
     color: white; 
     font-weight: bold; 
     font-size: 20px; 

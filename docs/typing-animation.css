@@ -6,6 +6,7 @@
     --animation-delay-3: 10s; 
     --animation-delay-4: 13s; 
     --animation-delay-5: 16s; 
+    --animation-delay-6: 19s;
     --background-color-primary: #ccfffc; 
 }
 
@@ -96,6 +97,7 @@
 }
 
 .resume-list {
+    width: 50vw; 
     display: inline-block;
     text-align: left; 
     justify-self: center;
@@ -142,6 +144,19 @@
     blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
+#prog-lead {
+    color: rgb(10, 171, 10);
+}
+
+#prog-lead::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards; 
+}
+
+#prog-lead::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
 #violinist {
     color: orange; 
 }
@@ -154,6 +169,20 @@
     animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-4) forwards, 
     blink 750ms steps(var(--animation-steps)) infinite; 
 }
+
+#lifeguard {
+    color:rgb(0, 60, 255)
+}
+
+#lifeguard::before {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards; 
+}
+
+#lifeguard::after {
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards, 
+    blink 750ms steps(var(--animation-steps)) infinite; 
+}
+
 
 #basketball {
     color: rgb(6, 199, 6); 
@@ -168,29 +197,16 @@
     blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
-#prog-lead {
-    color: rgb(10, 171, 10);
-}
-
-#prog-lead::before {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards; 
-}
-
-#prog-lead::after {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-3) forwards, 
-    blink 750ms steps(var(--animation-steps)) infinite; 
-}
-
 #aspire {
     color: rgb(192, 2, 192); 
 }
 
 #aspire::before {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards; 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-6) forwards; 
 }
 
 #aspire::after {
-    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-5) forwards, 
+    animation: typewriter var(--animation-speed) steps(var(--animation-steps)) var(--animation-delay-6) forwards, 
     blink 750ms steps(var(--animation-steps)) infinite; 
 }
 
