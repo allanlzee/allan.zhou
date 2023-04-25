@@ -16,7 +16,7 @@
 
 .intro_img {
   width: var(--img-width + 10%);
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow); 
 }
   
 .nav__item {
