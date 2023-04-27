@@ -1,21 +1,21 @@
-let slideIndex = 0; 
+let slideProfile = 0; 
 slideshow();
 
 function slideshow() {
     let index; 
 
-    let slides = document.getElementsByClassName("intro-img-div"); 
+    let slides = document.getElementsByClassName("intro_img"); 
 
     for (index = 0; index < slides.length; index++) {
         slides[index].style.display = "none"; 
     }
 
-    slideIndex++; 
+    slideProfile++; 
 
-    if (slideIndex > slides.length) {
-        slideIndex = 1; 
+    if (slideProfile > slides.length) {
+        slideProfile = 1; 
     }
 
-    slides[slideIndex - 1].style.display = "relative"; 
+    slides[slideProfile - 1].style.display = "relative"; 
     setTimeout(slideshow, 2000); 
 }

@@ -81,6 +81,7 @@
     min-width: 330px;
     position: relative;
     z-index: 4;
+    display: none;
   }
 
   .section-subtitle-welcome {
