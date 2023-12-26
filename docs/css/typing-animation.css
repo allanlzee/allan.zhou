@@ -50,6 +50,21 @@
     margin: auto; 
 }
 
+.resume-list {
+    width: auto; 
+    display: inline-block;
+    text-align: left; 
+    justify-self: center;
+}
+
+.list-point {
+    display: block;
+    text-align: left;
+    font-size: 100%; 
+    padding-bottom: 1.0em;
+}
+
+
 @media (max-width: 900px) {
     .resume {
         font-size: 14px;
@@ -84,6 +99,7 @@
 .resume-header-div {
     padding: 1em;
     width: 40vw;
+    text-align: center;
 }
 
 .resume-header-div:hover {
@@ -96,20 +112,7 @@
     font-size: 140%; 
     color: rgb(0, 60, 255);
     margin: 0.5em; 
-}
-
-.resume-list {
-    width: auto; 
-    display: inline-block;
-    text-align: left; 
-    justify-self: center;
-}
-
-.list-point {
-    display: block;
-    text-align: left;
-    font-size: 100%; 
-    padding-bottom: 1.0em;
+    text-align: center;
 }
 
 .section-title-typewriter {
