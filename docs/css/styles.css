@@ -32,7 +32,7 @@
 
 /* For Larger Screen Size */
 
-@media (min-width: 601px) {
+@media (min-width: 600px) {
   :root {
     --fs-h1: 4.5rem;
     --fs-h2: 3.75rem;

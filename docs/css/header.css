@@ -68,7 +68,7 @@
     margin: 0 auto;
     margin-bottom: 10em; 
     margin-top: 10em; 
-    grid-column-gap: 1em;
+    grid-column-gap: 2.5em;
     grid-template-areas:
       "img title"
       "img subtitle";
@@ -92,6 +92,7 @@
     position: relative;
     left: -2em;
     width: calc(100% + 6.5em);
+    color: rgb(0, 0, 71);
   }
 }
 
