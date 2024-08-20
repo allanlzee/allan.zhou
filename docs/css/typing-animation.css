@@ -1,12 +1,12 @@
 :root {
     --animation-speed: 3s; 
     --animation-steps: 25; 
-    --animation-delay: 4s; 
-    --animation-delay-2: 7s; 
-    --animation-delay-3: 10s; 
-    --animation-delay-4: 13s; 
-    --animation-delay-5: 16s; 
-    --animation-delay-6: 19s;
+    --animation-delay: 0s; 
+    --animation-delay-2: 3s; 
+    --animation-delay-3: 6s; 
+    --animation-delay-4: 9s; 
+    --animation-delay-5: 12s; 
+    --animation-delay-6: 15s;
     --background-color-primary: #ccfffc; 
 }
 
