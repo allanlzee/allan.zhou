@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/typing-animation.css" /> 
     <link rel="stylesheet" href="css/violin.css" />
     <link rel="stylesheet" href="css/robotics.css"/> 
+    <link rel="stylesheet" href="css/engineering-portfolio.css"/> 
     <link
       href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
       rel="stylesheet"
@@ -23,6 +24,61 @@
     <script src="js/slides.js"></script>
     <script src="js/resume.js"></script>
     <script src="js/profile.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        let full_div = document.getElementsByClassName("full-screen-div");
+
+        for (let i = 0; i < full_div.length; i++) {
+          full_div[i].addEventListener('click', function() {
+            var img = document.createElement('img');
+            switch(i) {
+              case 0: 
+                img.src = 'Images\\cmod-project.png'; 
+                break; 
+              case 1: 
+                img.src = 'Images\\cpr-project.png';
+                break;
+              case 2: 
+                img.src = 'Images\\pcb-3d.png'
+                break;
+              case 3: 
+                img.src = 'Images\\locked-in-project.png'
+                break;
+              case 4:
+                img.src = 'Images\\bridge-project.png'
+                break;
+              default:
+                img.src = "Images\\cmod-project.png"
+            }
+            img.className = 'full-screen';
+
+            var blurOverlay = document.createElement('div'); 
+            blurOverlay.className = 'blur-overlay';
+            document.body.appendChild(blurOverlay); 
+
+            // Add the image to the body
+            document.body.appendChild(img);
+
+            // Force a reflow to apply the transition effect
+            setTimeout(function() {
+              blurOverlay.classList.add('show');
+              img.classList.add('show');
+            }, 10); // Slight delay to ensure the class is applied after rendering
+
+            // Remove the image when clicking on it
+            img.addEventListener('click', function() {
+              img.classList.remove('show');
+              blurOverlay.classList.remove('show');
+
+              setTimeout(function() {
+                img.remove();
+                blurOverlay.remove();
+              }, 500); // Match the transition duration
+            });
+          });
+        }
+      });
+    </script>
     <script>
       var robotSlideClass = "robot-slide";
       var robotDotClass = "robot-demo"; 
@@ -49,7 +105,7 @@
         </button>
         <p class ="contact-info">
           <b id ="contact-info-name">Allan Zhou</b> <br />
-          <span id="contact-info-description">allanlinzhou@gmail.com <br />
+          <span id="contact-info-description">allan.zhou@mail.utoronto.ca <br />
           <a id ="linkedin" href="https://www.linkedin.com/in/allanlzee/" target="_blank">LinkedIn: @allanlzee</a><br /> 
           <a id ="github" href="https://github.com/allanlzee" target="_blank">GitHub: @allanlzee</a>
           </span>
@@ -63,7 +119,7 @@
               <a href="#Resume" class="nav__link">Resume</a>
             </li>
             <li class="nav__item">
-              <a href="#Projects" class="nav__link">Projects</a>
+              <a href="#Projects" class="nav__link">Engineering Projects</a>
             </li>
             <li class="nav__item">
               <a href="#Robotics" class="nav__link">Robotics</a>
@@ -116,7 +172,9 @@
       </div> 
       <div class="about-me-grid">
         <div class="resume">
-          <a class="section-title-typewriter" href="https://github.com/allanlzee/allan.zhou/raw/master/docs/resume/Allan_Zhou_Resume.pdf" download>Resume</a>
+          <a class="section-title-typewriter">Resume</a>
+          <br>
+          <a href="https://github.com/allanlzee/allan.zhou/raw/master/docs/resume/Allan_Zhou_Resume.pdf" download>Click to Download Resume</a>
           
           <div class="resume-header-div" onclick="showList(0)">
             <a class="resume-heading">
@@ -260,6 +318,7 @@
         </div>
       </div>
     </section>
+  
     <!--Projects Section-->
     <section class="my-projects" id="Projects">
       <div class="waves-bottom">
@@ -267,27 +326,33 @@
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
       </div>
-      <h2 class="section-title-projects">Software Projects</h2> <br>
+      <h2 class="section-title-projects">Engineering Projects</h2> <br>
+      <a href="https://github.com/allanlzee/allan.zhou/raw/master/docs/resume/Design_Portfolio.pdf" download>Click to Download Portfolio</a>
       <br> 
       <div class="coding-project-grid">
-        <div class="android-development coding-projects"><b>Java Android App Development</b>
-            <a href="https://github.com/allanlzee/AzTech-Personal" class="coding-projects" target="_blank"> 
-              <img src="Images/android-studio.png" class="project-pictures" alt="Android Studio" /> 
-            </a>
+        <div class="vehicle full-screen-div coding-projects"><b>Vehicle Data Acquisition</b>
+          <img src="Images/cmod.png" class="project-pictures coding-projects" alt="Python Computer Vision using OpenCV"/> 
         </div>
-        <div class="python coding-projects"><b>Python Computer Vision</b>
-            <a href="https://github.com/allanlzee/Open-CV-Mediapipe" class="coding-projects" target="_blank">
-              <img src="Images/computer-vision.png" class="project-pictures" alt="Python Computer Vision using OpenCV"/>
-            </a>
+      
+        <div class="android-development full-screen-div coding-projects"><b>CPR Feedback Device</b>
+            <img src="Images/cpr.png" class="project-pictures" alt="Android Studio" /> 
         </div>
-        <div class="front-end-development coding-projects"><b>Front End Development</b>
-          <a href="https://github.com/allanlzee/Portfolio-Revised" class="coding-projects" target="_blank">
-            <img src="Images/portfolio-project.png" class="project-pictures"/>
-          </a>
+
+        <div class="front-end-development full-screen-div coding-projects"><b>Printed Circuit Board Development</b>
+          <img src="Images/pcb.png" class="project-pictures" id="pcb-pic"/>
         </div>
-        <div class="api-projects coding-projects"><b>API Projects</b>
-          <a href="https://github.com/allanlzee/Discord-Bot" class="coding-projects" target="_blank">
-            <img src="Images/discord-bot-2.png" class ="project-pictures"/>
+
+        <div class="api-projects full-screen-div coding-projects"><b>Locked In - Smart Home Device</b>
+          <img src="Images/locked-in.png" class ="project-pictures"/>
+        </div>
+
+        <div class="bridge-project full-screen-div coding-projects"><b>Bridge Structure Optimization</b>
+          <img src="Images/bridge.png" class ="project-pictures"/>
+        </div>
+
+        <div class="locked-in-project coding-projects"><b>Personal Scheduling App</b>
+          <a href="https://github.com/allanlzee/AzTech-Personal" class="coding-projects" target="_blank"> 
+            <img src="Images/android-studio.png" class="project-pictures" alt="Android Studio" /> 
           </a>
         </div>
     </div>

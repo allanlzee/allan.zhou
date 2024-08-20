@@ -60,6 +60,7 @@
 html {
   margin: 0;
   height: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -70,6 +71,7 @@ body {
   font-family: var(--primary-font);
   font-size: var(--font-size-body);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 /* General Features */
