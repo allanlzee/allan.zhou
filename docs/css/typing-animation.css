@@ -104,7 +104,7 @@
 
 .resume-header-div:hover {
     cursor: pointer; 
-    background-color: white;
+    background-color: #ffffff;
     animation: scale 200ms ease-in-out forwards; 
 }
 
