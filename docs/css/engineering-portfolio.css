@@ -32,3 +32,27 @@
     display: none;
 }
   
+.exit-overlay {
+  .exit-overlay {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's on top */
+    display: flex;
+    align-items: flex-end; /* Align text box to the bottom */
+    justify-content: center; /* Center horizontally */
+    padding-bottom: 20px; /* Add some space from the bottom */
+  }
+}
+
+.exit-text-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}

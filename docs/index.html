@@ -56,6 +56,16 @@
             blurOverlay.className = 'blur-overlay';
             document.body.appendChild(blurOverlay); 
 
+            var exitOverlay = document.createElement('div'); 
+            exitOverlay.className = 'exit-overlay'; 
+
+            var textBox = document.createElement('div'); 
+            textBox.className = 'exit-text-box'; 
+            textBox.textContent = 'Click to exit.';
+
+            exitOverlay.appendChild(textBox); 
+            document.body.appendChild(exitOverlay);
+
             // Add the image to the body
             document.body.appendChild(img);
 
@@ -75,6 +85,17 @@
                 blurOverlay.remove();
               }, 500); // Match the transition duration
             });
+
+            exitOverlay.addEventListener('click', function() {
+              img.classList.remove('show');
+              blurOverlay.classList.remove('show');
+              document.body.removeChild(exitOverlay); 
+
+              setTimeout(function() {
+                img.remove();
+                blurOverlay.remove();
+              }, 500); // Match the transition duration
+            })
           });
         }
       });
