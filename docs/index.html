@@ -52,50 +52,57 @@
             }
             img.className = 'full-screen';
 
-            var blurOverlay = document.createElement('div'); 
+            // Create the blur overlay
+            var blurOverlay = document.createElement('div');
             blurOverlay.className = 'blur-overlay';
-            document.body.appendChild(blurOverlay); 
 
-            var exitOverlay = document.createElement('div'); 
-            exitOverlay.className = 'exit-overlay'; 
+            // Create the exit overlay
+            var exitOverlay = document.createElement('div');
+            exitOverlay.className = 'exit-overlay';
 
-            var textBox = document.createElement('div'); 
-            textBox.className = 'exit-text-box'; 
+            var textBox = document.createElement('div');
+            textBox.className = 'exit-text-box';
             textBox.textContent = 'Click to exit.';
 
-            exitOverlay.appendChild(textBox); 
+            exitOverlay.appendChild(textBox);
+
+            // Add elements to the body
+            document.body.appendChild(blurOverlay);
+            document.body.appendChild(img);
             document.body.appendChild(exitOverlay);
 
-            // Add the image to the body
-            document.body.appendChild(img);
-
-            // Force a reflow to apply the transition effect
+            // Apply the show class to trigger the transition
             setTimeout(function() {
               blurOverlay.classList.add('show');
               img.classList.add('show');
+              exitOverlay.style.visibility = 'visible'; // Make the exit overlay visible
             }, 10); // Slight delay to ensure the class is applied after rendering
 
-            // Remove the image when clicking on it
+            // Remove the image and overlays when clicking on the image
             img.addEventListener('click', function() {
               img.classList.remove('show');
               blurOverlay.classList.remove('show');
+              exitOverlay.style.visibility = 'hidden';
 
               setTimeout(function() {
                 img.remove();
                 blurOverlay.remove();
+                exitOverlay.remove();
               }, 500); // Match the transition duration
             });
 
+            // Remove everything when clicking the exit overlay
             exitOverlay.addEventListener('click', function() {
               img.classList.remove('show');
               blurOverlay.classList.remove('show');
-              document.body.removeChild(exitOverlay); 
+              exitOverlay.style.visibility = 'hidden';
 
               setTimeout(function() {
                 img.remove();
                 blurOverlay.remove();
+                exitOverlay.remove();
               }, 500); // Match the transition duration
-            })
+            });
           });
         }
       });
