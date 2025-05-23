@@ -10,6 +10,19 @@
   align-items: center;
   background: linear-gradient(45deg, #54dbf3, #ffc23f);
 }
+
+.project-subtitle {
+  font-size: 1.5rem;
+  margin: 2rem 0 1rem;
+  color: #333;
+  text-align: left;
+}
+
+.project-category {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
   
 .portfolio-img {
   margin-left: auto;
@@ -32,6 +45,12 @@
   font-size: 40px;
   color: darkblue; 
   margin-top: 2em; 
+}
+
+.section-subtitle {
+  font-size: 30px;
+  color: darkblue; 
+  margin-top: 1em; 
 }
 
 .section-subtitle-projects {
