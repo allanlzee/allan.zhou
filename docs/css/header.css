@@ -130,4 +130,18 @@
   }
 }  
 
+.contact-info {
+  color: white;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none; 
+  margin-right: 10px;
+}
+
+.contact-info a:hover {
+  color: white; 
+}
+
 /* End of Introductory/Welcome Section*/
