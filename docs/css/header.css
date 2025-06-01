@@ -137,11 +137,19 @@
 .contact-info a {
   color: white;
   text-decoration: none; 
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .contact-info a:hover {
   color: white; 
+}
+
+.contact-info a i {
+  transition: transform 0.2s ease;
+}
+
+.contact-info a i:hover {
+  transform: scale(1.2); /* Increase size on hover */
 }
 
 /* End of Introductory/Welcome Section*/
