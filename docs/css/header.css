@@ -152,4 +152,58 @@
   transform: scale(1.2); /* Increase size on hover */
 }
 
+.footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.footer-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.footer-form h4 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.footer-form input,
+.footer-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #222;
+  color: white;
+}
+
+.footer-form button {
+  background-color: #0059ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.footer-form button:hover {
+  transform: scale(1.05);
+}
+
+
 /* End of Introductory/Welcome Section*/
