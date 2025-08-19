@@ -35,24 +35,36 @@
             var img = document.createElement('img');
             switch(i) {
               case 0: 
-                img.src = 'Images\\edl-pcb-project.avif'; 
-                break; 
+                img.src = 'Images\\sdc.png';
+                break;
               case 1: 
-                img.src = 'Images\\hvbb-project.avif';
+                img.src = 'Images\\power-dis-arch.png';
                 break;
               case 2: 
+                img.src = 'Images\\can-bus.png';
+                break;
+              case 3: 
+                img.src = 'Images\\power-daq.png';
+                break;              
+              case 4: 
+                img.src = 'Images\\edl-pcb-project.avif'; 
+                break; 
+              case 5: 
+                img.src = 'Images\\hvbb-project.avif';
+                break;
+              case 6: 
                 img.src = 'Images\\cmod-project.avif'; 
                 break;
-              case 3:
+              case 7:
                 img.src = 'Images\\robot-project.avif';
                 break;
-              case 4: 
+              case 8: 
                 img.src = 'Images\\cpr-project.avif';
                 break;
-              case 5:
+              case 9:
                 img.src = 'Images\\locked-in-project.avif';
                 break;
-              case 6:
+              case 10:
                 img.src = 'Images\\bridge-project.avif';
                 break;
             }
@@ -359,6 +371,25 @@
       <h2 class="section-title-projects">Engineering Portfolio</h2> <br>
       <a href="https://github.com/allanlzee/allan.zhou/raw/master/docs/resume/Allan_Zhou_Design_Portfolio.pdf" download>Click to Download Portfolio</a>
       
+      <h2 class="section-subtitle">Low Voltage Electrical Architecture</h2> <br>
+      <div class="coding-project-grid">
+        <div class="vehicle full-screen-div coding-projects"><b>University of Toronto Formula Racing | Shutdown Circuit</b>
+          <img src="Images/sdc.png" class="project-pictures coding-projects" alt="Python Computer Vision using OpenCV"/> 
+        </div>
+      
+        <div class="android-development full-screen-div coding-projects"><b>University of Toronto Formula Racing | Power Architecture</b>
+          <img src="Images/power-dis-arch.png" class="project-pictures" id="pcb-pic"/>
+        </div>
+
+        <div class="locked-in-project full-screen-div coding-projects"><b>University of Toronto Formula Racing | CAN Bus Architecture</b>
+          <img src="Images/can-bus.png" class="project-pictures coding-projects" alt="Python Computer Vision using OpenCV"/> 
+        </div>
+      
+        <div class="api-projects full-screen-div coding-projects"><b>University of Toronto Formula Racing | Harness Layout</b>
+          <img src="Images/power-daq.png" class="project-pictures" id="pcb-pic"/>
+        </div>
+      </div>
+
       <h2 class="section-subtitle">Electronics Design</h2> <br>
       <div class="coding-project-grid">
         <div class="vehicle full-screen-div coding-projects"><b>EDL | Linear Actuator Control Module</b>
